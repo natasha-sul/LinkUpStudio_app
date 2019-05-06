@@ -1,136 +1,114 @@
-h1 
-	padding: 20px 0
-	font-size: 1.2em
-	font-weight: 600
-
-hr
-	height: 2px
-	margin: 15px 0 15px
-	border: none
-	background-color: rgba(0,0,0,0.12)
-
-.body
-  max-width: 1200px
-  
-  margin: auto
-  position: relative
-  display: flex
-  justify-content: space-between
 
 .wrapper
-  max-width: 1200px
-  margin: auto
-  position: relative
   display: flex
   justify-content: space-between
+  padding-left: 75px
+  padding-right: 75px
 
 .header
 	background-color: #e6e7eb
 	height: 80px
-    position: relative
-	  
+
 	a 
 		cursor: pointer
-		color: black
-
+		
 	#left-side-menu
-		padding: 15px 0
-		text-align: center
-
-		a
-			font-size: 30px
-			font-family: Roboto, sans-serif
-			font-weight: bold
-		label
-            display: flex
-            justify-content: space-around	
-		p
-			font-size: 10px
-			color: green
-			text-align: center  
-            
-        
-            
-
+		display: flex
+  		
+		.logo
+			background: url("../../img/logo.png ")
+			padding: 0px
+			margin: 10px
+			width: 254px
+			height: 70px
+                      
 	#right-side-menu
-		margin-right: 10px
-		margin-top: 30px
-	
+		
+		display: flex
+		justify-content: flex-end
 		a
-			height: 30px
-			width: 30px
 			padding: 10px
+			padding-top: 30px
+
+		hr
+			color: #b5b6b9 solid
+			height: 50px
+			flex: 1
+				
 
 		a:hover
 			color: #f47442
 
-		/deep/ .ui-menu
-			width: 17em
-
-			a
-				font-size: 1.2em
-
-		/deep/ .ui-menu.ui-menu-dynamic
-			top: 80px !important
-			left: auto !important
-			right: 0 !important
-
-
-	.profile
-		padding: 17.5px
-		font-weight: 500
-		color: white
-		cursor: pointer
-    position: relative
-    display: block
-
-		span 
-			vertical-align: middle
-			line-height: 21px
-			text-align: left
-			margin-right: 10px
+.body
+	background-color: #e6e7eb
+	height: 900px
     
-  i
-    position: absolute
-    top: 28px
+.text_center
+    padding-top: 270px
+    text-align: center 
+    a
+        font-size: 65px
+        color: #484848
+        span
+            color: #0e7200
+    p
+        color: #484848  
+    
+.filter-search
+  
+    background: none
+    border-radius: 10px 10px
+    max-width: 1024px
+    margin: auto
+    margin-top: 45px
 
-	.profile:hover
-		color: #f47442  
+/deep/ .ui-button
+	padding: 15px 30px
+	border-radius: 0px 10px 10px 0px
+	font-size: 13px
+	font-weight: 400
+	line-height: 16px
+	letter-spacing: 2px
+	width: 170px
+	text-align: center
+	background: #4dadbb
+	cursor: pointer
+	border: none
+	color: white
+	background: #4dadbb
+	height: 75px
+	margin: 0
+	padding: 5px 20px
 
- /deep/ .profile-sidebar .ui-sidebar
-		p
-			margin: 10px 0
-			position: relative
-			padding-left: 20px
+/deep/ .ui-dropdown
+		height: 75px
+		max-width: 144px !important
+		width: 170px !important
+		border: none
 
-		i 
-			position: absolute
-			left: 0
-			top: 4px
+.filter-form 
+	max-width: 1024px
+    border-radius: 10px 10px
 
-		a 
-			color: #7C898B !important
-
-  /deep/ .ui-panelmenu .ui-panelmenu-header.ui-state-active > a:nth-child(4)
-    border: 1px solid transparent !important
-    background-color: #c8c8c8 !important
-
-  /deep/ .ui-panelmenu .ui-panelmenu-header.ui-state-active > a:hover
-    border: 1px solid transparent !important
-    background-color: #c8c8c8 !important
-
-	/deep/ .ui-panelmenu .ui-panelmenu-header > a
-    border: 1px solid transparent
-    background-color: #fff
-
-	/deep/ .ui-panelmenu .ui-panelmenu-header > a .ui-panelmenu-icon
-		display: none
-
-	/deep/ .ui-panelmenu .ui-panelmenu-header > a
-		font-size: 16px
-
-	/deep/ .ui-panelmenu .ui-menuitem-icon
-		margin: 0 0.5em 0 0
-
-/deep/ body .ui-panelmenu .ui-panelmenu-content
-    border: 1px solid transparent !important  
+	.wrapper
+		width: 1000px
+		background: white
+		border-radius: 15px 15px
+		height: 75px
+		box-shadow: 4px 4px 11px 2px rgba(0,0,0,0.27)
+        border-radius: 10px 10px
+	input 
+		background: #fff
+		outline: none			
+		width: 630px
+		border-radius: 0px 
+		border: 1px solid #DCDCDC
+		border-bottom-style: none
+		border-left-style: none
+		border-top-style: none
+		display: inline-block
+		font-size: 14px
+		height: 75px
+        display: flex
+        justify-content: flex-end
+        border-radius: 10px
