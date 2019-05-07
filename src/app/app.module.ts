@@ -1,10 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
+import { FormsModule, ReactiveFormsModule }from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { SearchComponent } from './search/search.component';
+
 
 import {AccordionModule} from 'primeng/accordion';     
 import {ButtonModule} from 'primeng/button';
@@ -18,7 +22,8 @@ import {RouterModule} from '@angular/router';
   declarations: [
     AppComponent,
     MainComponent,
-    SearchComponent
+    SearchComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -26,14 +31,22 @@ import {RouterModule} from '@angular/router';
     RouterModule.forRoot([
     {
       path: "search",
-      component: SearchComponent
-    }
+      component: SearchComponent,
+    },
+    {
+      path: "main",
+      component: MainComponent
+    },
+   
     ]),
     AccordionModule,
     ButtonModule,
     DropdownModule,
     MenuModule,
-    InputTextModule
+    InputTextModule,
+    FormsModule, 
+    ReactiveFormsModule,
+    BrowserAnimationsModule
 
 
   ],

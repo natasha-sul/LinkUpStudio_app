@@ -1,20 +1,20 @@
-
+.page
+	background: #e6e7eb
+	
 .wrapper
   display: flex
   justify-content: space-between
-  padding-left: 75px
-  padding-right: 75px
-
+  
 .header
-	background-color: #e6e7eb
-	height: 80px
+	height: 10%
+	padding-left: 75px
+  	padding-right: 75px
 
 	a 
 		cursor: pointer
 		
 	#left-side-menu
 		display: flex
-  		
 		.logo
 			background: url("../../img/logo.png ")
 			padding: 0px
@@ -26,12 +26,17 @@
 		display: flex
 		justify-content: flex-end
 		font-weight: bold
+		padding-right: 75px
 	a
-		padding: 23px
-		padding-top: 30px
-		font-size: 18px
+		padding-left: 10px
+		padding-right: 10px
+		text-align: center
+		margin-top: 10%
+		font-size: 15px
 		font-family: "Raleway"
 		color: rgb(72, 72, 72)
+		
+		
 
 	hr
 		padding-top: 20px
@@ -46,61 +51,93 @@
 	background-color: #e6e7eb
 	background: url("../../img/main_page.png ")
 	height: 100%
+	
     
 	.text_center
-		font-size: 55px
+		font-size: 8vh
 		font-family: "Raleway"
 		font-weight: bold
 		color: rgb(72, 72, 72)
 		text-align: center
+		margin-bottom: 10%
 		span
 			color: #0e7200
 		p
 			font-size: 18px  
-	.filter-search
-		background: none
-		border-radius: 10px 10px
-		width: 55%
-		margin: auto
-		margin-top: 45px
+	.home-page
 
-	/deep/ .ui-button
-		font-size: 16px
-		width: 100%
-		font-family: "Raleway"
-		font-weight: bold
-		background: #4dadbb
-		cursor: pointer
-		color: white
-		height: 77px
-	
-	/deep/ .ui-dropdown
-		height: 75px
-		max-width: 144px !important
-		width: 170px !important
-		border: none
+		.search-form
+			
+			width: 70%
+			display: flex
+			justify-content: center
 
-	.filter-form 
-		max-width: 1000px
-		width: 100%
-		border-radius: 10px 10px
+		#search-area
+			max-width: 1000px
+			
 
-		.wrapper
-			background: white
-			box-shadow: 4px 4px 11px 2px rgba(0,0,0,0.27)
-			border-radius: 10px 10px
+			#search
+			position: relative 
+			dispaly: inline
+			margin-left: 20%
+			margin-right: 20%
+			padding-left: 0px
 			padding-right: 0px
-			display: flex
-			justify-content: flex-end
-		input 
-			background: #fff
-			outline: none			
-			width: 60%
-			border: 1px solid #DCDCDC
-			font-size: 14px
-			height: 73px
-			display: flex
-			justify-content: flex-end
+			height: 15%
+			border-radius: 10px 10px
+			top: 40% 
+			box-shadow: 0px 10px 10px rgba(0,0,0,0.27)
+				
+				
+			#input
+				position: relative
+				height: 64%
+				border-radius: 0px
+				width: 68%
+				height: 50px
+				font-size: 4vh
+				font-family: "Raleway"
+				border-top-style: none
+				border-bottom-style: none
+				border-left-style: none
+				outline: none
+
+			#groupdown
+				position: relative
+				height: 64%
+				border-radius: 0px
+				width: 15%
+				font-family: "Raleway"
+				border-radius: 10px 0px 0px 10px
+				font-size: 20px
+				height: 50px
+				border-top-style: none
+				border-bottom-style: none
+				border-left-style: none
+				outline: none
+			
+			/deep/ .ui-inputtext 
+			
+				color: #666666
+				float: left
+				text-align: center
+				font-family: "Raleway"  
+				overflow: hidden
+        
+			#srch-btn  
+				position: relative
+				height: 52px
+				font-size: 10px
+				width: 20%
+				font-family: "Raleway"
+				font-weight: bold
+				border-radius: 0px 10px 10px 0px
+				font-size: 1.5vh
+				text-align: center
+				background: #4dadbb
+				cursor: pointer
+				color: white
+ 
 .transparent
 	margin-top: 10%
 	margin-left: 25%
