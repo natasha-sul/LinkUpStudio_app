@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
-import { FormsModule, ReactiveFormsModule }from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
@@ -10,12 +10,13 @@ import { MainComponent } from './main/main.component';
 import { SearchComponent } from './search/search.component';
 
 
-import {AccordionModule} from 'primeng/accordion';     
+import {AccordionModule} from 'primeng/accordion';
 import {ButtonModule} from 'primeng/button';
 import {DropdownModule} from 'primeng/dropdown';
 import {MenuModule} from 'primeng/menu';
 import {InputTextModule} from 'primeng/inputtext';
 import {RouterModule} from '@angular/router';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -23,28 +24,35 @@ import {RouterModule} from '@angular/router';
     AppComponent,
     MainComponent,
     SearchComponent,
-    
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
     {
-      path: "search",
+      path: 'search',
       component: SearchComponent,
     },
     {
-      path: "main",
-      component: MainComponent
+      path: 'main',
+      component: MainComponent,
     },
-   
+    {
+      path: 'home',
+      component: HomeComponent,
+    },
+    {
+      path: '',
+      component: HomeComponent,
+    },
     ]),
     AccordionModule,
     ButtonModule,
     DropdownModule,
     MenuModule,
     InputTextModule,
-    FormsModule, 
+    FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule
 
