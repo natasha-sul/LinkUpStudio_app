@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {SelectItem} from 'primeng/api';
 
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,9 +12,7 @@ import {SelectItem} from 'primeng/api';
 
 export class AppComponent {
   title = 'my-app';
-  
 
-  
-     
   }
+
 
