@@ -19,6 +19,7 @@ import { RouterModule  } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { PopularProductsComponent } from './popular-products/popular-products.component';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { HeaderComponent } from './header/header.component';
     HomeComponent,
     PopularProductsComponent,
     HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,6 +50,10 @@ import { HeaderComponent } from './header/header.component';
     {
       path: 'header',
       component: HeaderComponent,
+    },
+    {
+      path: 'footer',
+      component: FooterComponent,
     },
     {
       path: '',
