@@ -18,6 +18,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { RouterModule  } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { PopularProductsComponent } from './popular-products/popular-products.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { PopularProductsComponent } from './popular-products/popular-products.co
     MainComponent,
     HomeComponent,
     PopularProductsComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,6 +44,10 @@ import { PopularProductsComponent } from './popular-products/popular-products.co
     {
       path: 'PopularProducts',
       component: PopularProductsComponent,
+    },
+    {
+      path: 'header',
+      component: HeaderComponent,
     },
     {
       path: '',
