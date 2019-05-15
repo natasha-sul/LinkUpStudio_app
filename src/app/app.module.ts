@@ -2,14 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
-
-
-
 import { AccordionModule } from 'primeng/accordion';
 import { ButtonModule  } from 'primeng/button';
 import { DropdownModule  } from 'primeng/dropdown';
@@ -20,6 +15,8 @@ import { HomeComponent } from './home/home.component';
 import { PopularProductsComponent } from './popular-products/popular-products.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { CaroselComponent } from './carosel/carosel.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 @NgModule({
@@ -30,6 +27,7 @@ import { FooterComponent } from './footer/footer.component';
     PopularProductsComponent,
     HeaderComponent,
     FooterComponent,
+    CaroselComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,6 +54,10 @@ import { FooterComponent } from './footer/footer.component';
       component: FooterComponent,
     },
     {
+      path: 'carosel',
+      component: CaroselComponent,
+    },
+    {
       path: '',
       component: HomeComponent,
     },
@@ -67,7 +69,8 @@ import { FooterComponent } from './footer/footer.component';
     InputTextModule,
     FormsModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    CarouselModule,
 
 
   ],
