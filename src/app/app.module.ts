@@ -17,6 +17,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CaroselComponent } from './carosel/carosel.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { ElementOfCaroselComponent } from './element-of-carosel/element-of-carosel.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     HeaderComponent,
     FooterComponent,
     CaroselComponent,
+    ElementOfCaroselComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,6 +58,10 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     {
       path: 'carosel',
       component: CaroselComponent,
+    },
+    {
+      path: 'ElementOfCarosel',
+      component: ElementOfCaroselComponent,
     },
     {
       path: '',
