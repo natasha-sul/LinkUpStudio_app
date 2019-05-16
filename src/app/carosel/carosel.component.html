@@ -1,3 +1,4 @@
+
 <div class="main-part">
 
   <div class="class-background">
@@ -14,6 +15,8 @@
   <div class="class-carousel-center">
     <owl-carousel-o [options]="customOptions">
 
+        <div *ngFor="let id of feedbacks">
+
       <ng-template carouselSlide>
         <div class="class-element-of-carousel">
           <div id="feedbackId">
@@ -21,79 +24,23 @@
               <img src="../../assets/img/photo1.png" />
             </div>
             <div class="class-feedback-about-company">
-              <p>I have been incredibly impressed with LinkUp team of developers.
-                They worked hard to deliver the highest-quality product possible
-                and exceeded my expectations at every step of the way. I initially
-                found Andriy in search of a better price than what I could find locally
-                with other development firms. But what I found - in addition to a better
-                price - was a much higher-quality product as well, in every way: service,
-                design, development, communications...etc. 5+++ Stars work. Great job.</p>
+              <p>{{id.feedback}}</p>
             </div>
             <div class="class-conteiner">
               <div class="class-employee-name">
-                <a href="#">Johm Kammon</a>
+                <a href="#">{{id.name}}</a>
               </div>
               <div class="class-employee-position">
                 <label>
-                  Wholesum Founder
+                  {{id.position}}
                 </label>
               </div>
             </div>
           </div>​​​​
         </div>
       </ng-template>
-
-      <ng-template carouselSlide>
-        <div class="class-element-of-carousel">
-          <div id="feedbackId">
-            <div class="class-employee-photo">
-              <img src="../../assets/img/photo2.png" />
-            </div>
-            <div class="class-feedback-about-company">
-              <p>Loved working with LinkUp. Great guys, developers, and management.
-                They knew how to do the job, in the most professional way.</p>
-            </div>
-            <div class="class-conteiner">
-              <div class="class-employee-name">
-                <a href="#">Johm Kammon</a>
-              </div>
-              <div class="class-employee-position">
-                <label>
-                  Wholesum Founder
-                </label>
-              </div>
-            </div>
-          </div>​​​​
         </div>
-      </ng-template>
-
-      <ng-template carouselSlide>
-        <div class="class-element-of-carousel">
-          <div id="feedbackId">
-            <div class="class-employee-photo">
-              <img src="../../assets/img/photo3.png" />
-            </div>
-            <div class="class-feedback-about-company">
-              <p>Nice company willing to work and get educated at he same time.
-                Ready to face any challenges and very friendly with customers.
-                hey quote very humbly and every invoice can be discussed well in advance.
-                We made a custom design web shop with them and keep on cooperating on development
-                and maintenance. Highly recommended.</p>
-            </div>
-            <div class="class-conteiner">
-              <div class="class-employee-name">
-                <a href="#">Johm Kammon</a>
-              </div>
-              <div class="class-employee-position">
-                <label>
-                  Wholesum Founder
-                </label>
-              </div>
-            </div>
-          </div>​​​​
-        </div>
-      </ng-template>
-
+    
     </owl-carousel-o>
   </div>
 </div>
